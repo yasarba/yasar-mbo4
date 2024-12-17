@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="name" id="name">
+  <button onclick="sla_spelers_op()">opslaan</button>
+
+  <script>
+
+    var spelers =[ "yasar", "ronaldo","messi" ];
+
+    function sla_spelers_op(){
+      var speler = document.getElementById("name").value;
+      spelers.push(speler);
+      console.log(spelers);
+      document.getElementById("name").value ="";
+    }
+
+
+  </script>
+</body>
+</html>
